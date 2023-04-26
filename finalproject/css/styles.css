@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    background-color: rgb(70, 70, 70);
+    background-image: url(../media/3.jpg);
+    font-family: "Trirong", serif;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+#container {
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
+h1 {
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    text-shadow: 2px 2px 2px black;
+}
+
+img {
+    border: 6px solid red;
+    margin: 1em;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: red;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    border: 8px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    text-align: center;
+    margin: 1em;
+}
+
+nav {
+    border: 8px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 1em;
+    overflow: auto;
+    width: 100%
+}
+
+nav a {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 15px;
+    transition: all 0.2s ease;
+    color: black;
+    font-size: 36px;
+}
+
+nav a:hover {
+    background-color: red;
+}
+
+nav a:active {
+    background-color: white;
+}
+
+article {
+    border: 8px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 1em;
+}
+
+section {
+    border: 8px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 1em;
+}
+
+footer {
+    border: 8px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    margin: 1em;
+}
+
+@keyframes slidein {
+    from {
+        margin-left:200%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* phones */
+@media only screen and (min-width: 480px) {
+    #container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* tablets */
+@media only screen and (max-width: 481px) {
+    #container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+/* desktop */
+@media only screen and (max-width: 769px) {
+    #container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
